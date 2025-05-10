@@ -4,14 +4,10 @@ on:
   push:
       branches:
         - main 
-      paths:
-        - 'react/contraction-timer/**'
 
   pull_request:
     types: [closed]
     branches: [main]
-    paths:
-    - "react/contration-timer/**"
 
   workflow_dispatch: # Allows you to run this workflow manually from the Actions tab
 
@@ -34,17 +30,15 @@ jobs:
           node-version: '20'
 
       - name: Install dependencies
-        working-directory: ./react/contraction-timer
         run: npm ci
 
       - name: Build React application
-        working-directory: ./react/contraction-timer
         run: npm run build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./react/contraction-timer/dist
+          path: dist
       
 
   deploy:
