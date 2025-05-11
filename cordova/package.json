@@ -1,0 +1,24 @@
+{
+  "name": "com.rwss.contractiontimer",
+  "displayName": "Simple Contraction Timer",
+  "version": "1.0.0",
+  "description": "A sample Apache Cordova application that responds to the deviceready event.",
+  "main": "index.js",
+  "scripts": {
+    "start:ios": "cordova run ios",
+    "build:ios": "cordova build ios --device --release"
+  },
+  "keywords": [
+    "ecosystem:cordova"
+  ],
+  "author": "Apache Cordova Team",
+  "license": "Apache-2.0",
+  "cordova": {
+    "platforms": [
+      "ios"
+    ]
+  },
+  "devDependencies": {
+    "cordova-ios": "^7.1.1"
+  }
+}
