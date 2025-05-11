@@ -59,6 +59,9 @@ button {
   transition: border-color 0.25s;
 }
 
+.remove-button{
+  fill: #fff;
+}
 
 @media (prefers-color-scheme: light) {
   :root {
@@ -70,5 +73,9 @@ button {
   }
   button {
     background-color: #f9f9f9;
+  }
+
+  .remove-button{
+    fill: #213547;
   }
 }
