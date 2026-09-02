@@ -25,3 +25,7 @@ node_modules/
 /plugins/
 /platforms/
 build.json
+# Release signing key - never commit
+release.keystore
+*.keystore
+*.jks

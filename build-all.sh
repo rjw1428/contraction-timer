@@ -19,8 +19,8 @@ cp -R "$_VITE_DIST_DIR"/* "$_CORDOVA_WWW_DIR"/
 cd cordova
 
 # Build the Android and iOS release versions
-_ANDROID_BUILD_COMMAND="cordova build android --release"
-_IOS_BUILD_COMMAND="cordova build ios --release"
+_ANDROID_BUILD_COMMAND="npx cordova build android --release"
+_IOS_BUILD_COMMAND="npx cordova build ios --release"
 
 echo "Running: $_ANDROID_BUILD_COMMAND"
 $_ANDROID_BUILD_COMMAND

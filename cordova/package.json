@@ -20,7 +20,8 @@
     ]
   },
   "devDependencies": {
-    "cordova-android": "^14.0.1",
+    "cordova": "^13.0.0",
+    "cordova-android": "^15.1.0",
     "cordova-ios": "^7.1.1"
   }
 }
